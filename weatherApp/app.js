@@ -6,7 +6,6 @@ var CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
 
 var GOOGLE_MAPS_API_KEY = 'AIzaSyCxjoOb9iDK0AcSLqGocYGAF24LbKKnVYg';
 var GOOGLE_MAPS_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
-//var skycons = new Skycons({"color": "pink"});
 
 // This function returns a promise that will resolve with an object of lat/lng coordinates
 function getCoordinatesForCity(cityName) {
