@@ -85,6 +85,14 @@ header a {
     margin: 25px;
 }
 
+/*style image links*/
+a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #000;
+}
+
 /* loader */
 
 #overlay {

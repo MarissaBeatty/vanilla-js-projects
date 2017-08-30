@@ -35,7 +35,7 @@
     //   <img src="URL OF THE THUMBNAIL" alt="TITLE OF THE IMAGE">
     // </a>
   
-    return link; //now we can disply the link, which "contains" an image - when I click on the image, I'l go to a new tab with the larger image
+    return link; //now we can display the link, which "contains" an image - when I click on the image, I'l go to a new tab with the larger image
   }
   
   //set variables from our HTML for the event listener to understand
@@ -51,7 +51,8 @@
     getPhotosForSearch(searchInput.value) //takes our search terms, using them to call the first function we create
       .then(photos => { //takes the array that we get back
         photos.forEach(photo => //for each photo in the array
-          flickrPhotos.appendChild(createFlickrThumb(photo)) //create a new thumbnail and add it to the gallery by calling the create function
+          // flickrPhotos.appendChild(createFlickrThumb(photo)) //create a new thumbnail and add it to the gallery by calling the create function
+          flickrPhotos.prepend(createFlickrThumb(photo)) // add photo to top of array - 
         )
       })
   })
